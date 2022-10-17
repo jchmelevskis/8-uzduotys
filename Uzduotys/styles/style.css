@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;700&display=swap');
+:root {
+    --background-main: white;
+    --font-main: #555;;
+    --font-gray: rgb(173, 173, 173);
+    --color-accent: #ce11e3;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: url('https://colorlib.com/etc/lf/Login_v5/images/bg-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: 20% 20%;
+    padding: 2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+section {
+    background-color: white;
+    height: 100%;
+    width: 680px;
+    border-radius: 1rem;
+    padding: 62px 110px 33px 110px;
+}
+
+section > h1 {
+    text-align: center;
+    font-size: 2.43rem;
+    color: var(--font-main);
+    margin-bottom: 3rem;
+    font-family: Montserrat;
+    font-weight:450;
+    line-height: 1.2;
+}
+
+section .social {
+    position: relative;
+    display: inline;
+    
+}
+section button.facebook {
+    width: calc((100% - 20px)/2);
+    height: 4.4rem;
+    font-family: Montserrat;
+    font-weight:600;
+    font-size: 18px;
+    color: #fff;
+    background-color: #3b5998;
+    border: none;
+    border-radius: 10px;
+    transition: all .4s;
+
+}
+
+section button.facebook:hover {
+    background: -webkit-linear-gradient(right, #00dbde, #fc00ff);
+}
+section button.google {
+ 
+    width: calc((100% - 20px)/2);
+    height: 4.4rem;
+    font-family: Montserrat;
+    font-weight:600;
+    font-size: 18px;
+    margin-left: 15px;
+    line-height: 1.2;
+    color: var(--font-main);
+    background-color: white;
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 20%);
+    border: none;
+    border-radius: 10px;
+    transition:4s ;
+    margin-bottom: 3rem;
+}
+
+section button.google:hover {
+    background: -webkit-linear-gradient(right, #00dbde, #fc00ff);
+}
+
+section .social i {
+   position: absolute;
+    background: none;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: 1.9rem;
+   left: 1.5rem;
+   margin-right: 15px;
+ 
+}
+
+section .social img {
+    width: 1.7rem;
+    position: absolute;
+    background: none;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3.5rem;
+    margin-right: 1rem;
+
+ }
+
+
+
+ /* input  */
+
+
+section .input-group input {
+    font-family: Poppins-Regular;
+    color: #333;
+    line-height: 1.2;
+    font-size: 18px;
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    margin-bottom: 15px;
+    transition: all .2s linear;
+}
+
+
+section .input-group input, textarea {
+    background-color: #f7f6f6;
+    border: none;
+  }
+section .input-group input:focus {
+   border: 2px solid violet;
+
+
+  }
+
+section label {
+    font-family: Montserrat;
+    font-weight:600;
+    font-size: 16px;
+    color: var(--font-main)
+}
+
+section .forgot {
+    display: flex;
+    gap: 5px;
+}
+
+section a {
+    font-family: Poppins;
+    font-size: 14px;
+    color: #999;
+    line-height: 1.5;
+
+}
+
+
+    
+/* button  */
+
+section form button {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+    transition: all .4s linear;
+    }
+    
+    section form button:hover { 
+        background: -webkit-linear-gradient(right, #00dbde, #fc00ff);
+        border: none;
+    }
+    
+    /* registration  */
+
+    
+  section .registration {
+    display: flex;
+    justify-content: center;
+        text-align: center;
+        gap: 0.2rem;
+     }
+
+     section .registration p {
+        font-family: Poppins;
+        font-size: 14px;
+        color: #999;
+        line-height: 1.5;
+         }
+         section .registration a {
+            font-family: Poppins;
+            font-size: 14px;
+            color: #999;
+            line-height: 1.5;
+             }
+
+             section .registration a:hover {
+                color: var(--color-accent);
+                 }
+
+    
+/* error  */
+
+.error-text {
+    display: none;
+}
+section .error-text {
+    color: red
+}
